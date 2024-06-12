@@ -7,8 +7,6 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   // State to hold the cart items
   const [cart, setCart] = useState([]);
-  // State to track if removeFromCart function is in process
-  const [removing, setRemoving] = useState(false);
 
   // Function to add a product to the cart
   const addToCart = (product, quantity) => {
@@ -31,19 +29,9 @@ export const CartProvider = ({ children }) => {
 
   // Function to remove a product from the cart
   const removeFromCart = (index) => {
-    // Log the index to see which product is being removed
-    console.log("Removing product at index:", index);
-
-    // Avoid multiple simultaneous calls to removeFromCart
-    if (removing) return;
-    setRemoving(true);
-
     setCart((prevCart) => {
       // Create a copy of the cart array
       const updatedCart = [...prevCart];
-
-      // Log the updatedCart to see its current state before modification
-      console.log("Cart before removal:", updatedCart);
 
       // Check if the index is out of bounds
       if (index < 0 || index >= updatedCart.length) {
@@ -54,17 +42,15 @@ export const CartProvider = ({ children }) => {
       // Check if there is more than one item of the product in the cart
       if (updatedCart[index].quantity > 1) {
         // If there is more than one item, decrease the quantity by one
-        updatedCart[index].quantity--;
+        updatedCart[index] = {
+          ...updatedCart[index],
+          quantity: updatedCart[index].quantity - 1,
+        };
       } else {
         // Otherwise, remove the product from the cart
         updatedCart.splice(index, 1);
       }
 
-      // Log the updatedCart to see if the correct product is removed
-      console.log("Updated cart after removal:", updatedCart);
-
-      // Reset removing state after operation is complete
-      setRemoving(false);
       return updatedCart;
     });
   };
