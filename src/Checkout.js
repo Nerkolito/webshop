@@ -4,35 +4,44 @@ import { CartContext } from "./CartContext";
 import { toast } from "react-toastify";
 
 function Checkout() {
+  // Get the cart from CartContext
   const { cart } = useContext(CartContext);
+
+  // State variables for storing name, address, and order status
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [orderPlaced, setOrderPlaced] = useState(false);
+
+  // Hook for navigating programmatically
   const navigate = useNavigate();
 
+  // Effect to handle redirection if cart is empty
   useEffect(() => {
     if (cart.length === 0) {
-      navigate("/cart");
+      navigate("/cart"); // Redirect to cart page
       toast.error(
         "Your cart is empty. Please add products to your cart before checking out."
-      );
+      ); // Display error message
     }
   }, [cart, navigate]);
 
+  // Calculate total price of items in the cart
   const totalPrice = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
 
+  // Handle order submission
   const handleOrder = () => {
     if (name.trim() && address.trim()) {
-      setOrderPlaced(true);
-      toast.success("Order placed successfully!");
+      setOrderPlaced(true); // Set order as placed
+      toast.success("Order placed successfully!"); // Display success message
     } else {
-      toast.error("Please fill in all fields.");
+      toast.error("Please fill in all fields."); // Display error message if fields are empty
     }
   };
 
+  // If order is placed, show order confirmation
   if (orderPlaced) {
     return (
       <div className="max-w-md mx-auto mt-8 p-4 bg-white rounded shadow-md">
@@ -42,6 +51,7 @@ function Checkout() {
     );
   }
 
+  // Render checkout form and cart items
   return (
     <div className="max-w-md mx-auto mt-8 p-4 bg-white rounded shadow-md">
       <h2 className="text-xl font-semibold mb-4">Checkout</h2>
