@@ -12,7 +12,7 @@ function Checkout() {
   const [address, setAddress] = useState("");
   const [orderPlaced, setOrderPlaced] = useState(false);
 
-  // Hook for navigating programmatically
+  // Hook for navigating
   const navigate = useNavigate();
 
   // Effect to handle redirection if cart is empty
