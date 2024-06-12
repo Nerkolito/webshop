@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
           {/* Application header */}
-          <h1 className="text-3xl font-bold mb-4">Nermin ALLT I ALLOSHOP</h1>
+          <h1 className="text-3xl font-bold mb-4">Nermshop från WISH</h1>
           {/* Navigation links */}
           <nav className="mb-4">
             <Link
