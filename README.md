@@ -24,18 +24,22 @@ git clone https://github.com/your-username/nermshop-fran-wish.git
 cd nermshop-fran-wish
 ```
 
-```bash
 2.Install the dependencies:
+
+```bash
 npm install
 ```
 
-```bash
 3.Start the development server:
+
+```bash
 npm start
 ```
 
+This will start the application at
+
 ```bash
-This will start the application at http://localhost:3000.
+ http://localhost:3000.
 ```
 
 ### `Usage`
@@ -47,3 +51,7 @@ Once the application is running, you can use it as follows:
 - **Product Detail**: Click on a product to view its details.
 - **Cart**: View items added to your shopping cart, adjust quantities, and remove items.
 - **Checkout**: Proceed to checkout to complete your purchase.
+
+```
+
+```
