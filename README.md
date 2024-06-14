@@ -51,7 +51,3 @@ Once the application is running, you can use it as follows:
 - **Product Detail**: Click on a product to view its details.
 - **Cart**: View items added to your shopping cart, adjust quantities, and remove items.
 - **Checkout**: Proceed to checkout to complete your purchase.
-
-```
-
-```
