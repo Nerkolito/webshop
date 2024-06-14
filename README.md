@@ -1,9 +1,9 @@
 # `Features`
 
-*Product Listing: Browse a list of available products.
+<li>*Product Listing: Browse a list of available products.
 *Product Details: View detailed information about a product, including its price and description.
 *Shopping Cart: Add products to the cart, view items in the cart, and remove items from the cart.
-*Checkout: Proceed to checkout to complete the purchase.
+*Checkout: Proceed to checkout to complete the purchase.<li>
 
 ## `Technologies Used`
 
