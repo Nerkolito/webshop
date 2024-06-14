@@ -1,17 +1,17 @@
 # `Features`
 
-<li>*Product Listing: Browse a list of available products.
-*Product Details: View detailed information about a product, including its price and description.
-*Shopping Cart: Add products to the cart, view items in the cart, and remove items from the cart.
-*Checkout: Proceed to checkout to complete the purchase.<li>
+<li>Product Listing: Browse a list of available products.<li>
+<li>Product Details: View detailed information about a product, including its price and description.<li>
+<li>Shopping Cart: Add products to the cart, view items in the cart, and remove items from the cart.<li>
+<li>Checkout: Proceed to checkout to complete the purchase.<li>
 
 ## `Technologies Used`
 
-*React: JavaScript library for building user interfaces.
-*React Router DOM: For routing and navigation.
-*React Toastify: For displaying notifications.
-*Tailwind CSS: For styling.
-\*Axios: For making HTTP requests.
+<li>React: JavaScript library for building user interfaces.<li>
+<li>React Router DOM: For routing and navigation.<li>
+<li>React Toastify: For displaying notifications.<li>
+<li>*Tailwind CSS: For styling.<li>
+\*Axios: For making HTTP requests.<li>
 
 ### `Installation`
 
@@ -35,7 +35,7 @@ This will start the application at http://localhost:3000.
 Usage
 Once the application is running, you can use it as follows:
 
-*Home Page: View a list of products available for purchase.
-*Product Detail: Click on a product to view its details.
-*Cart: View items added to your shopping cart, adjust quantities, and remove items.
-*Checkout: Proceed to checkout to complete your purchase.
+<li>*Home Page: View a list of products available for purchase.<li>
+<li>*Product Detail: Click on a product to view its details.<li>
+<li>*Cart: View items added to your shopping cart, adjust quantities, and remove items.<li>
+<li>*Checkout: Proceed to checkout to complete your purchase.<li>
