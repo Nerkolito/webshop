@@ -1,9 +1,9 @@
 # `Features`
 
-<li>Product Listing: Browse a list of available products.<li>
+<ol><li>Product Listing: Browse a list of available products.<li>
 <li>Product Details: View detailed information about a product, including its price and description.<li>
 <li>Shopping Cart: Add products to the cart, view items in the cart, and remove items from the cart.<li>
-<li>Checkout: Proceed to checkout to complete the purchase.<li>
+<li>Checkout: Proceed to checkout to complete the purchase.<li><ol>
 
 ## `Technologies Used`
 
