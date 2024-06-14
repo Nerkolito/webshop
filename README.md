@@ -24,19 +24,19 @@ git clone https://github.com/your-username/nermshop-fran-wish.git
 cd nermshop-fran-wish
 ```
 
-2.Install the dependencies:
+2.**Install the dependencies**:
 
 ```bash
 npm install
 ```
 
-3.Start the development server:
+3.**Start the development server**:
 
 ```bash
 npm start
 ```
 
-This will start the application at
+**This will start the application at**
 
 ```bash
  http://localhost:3000.
